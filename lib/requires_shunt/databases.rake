@@ -12,8 +12,6 @@ namespace :db do
       migrations_requiring_shunt.each do |pending_migration|
         puts '  %4d %s' % [pending_migration.version, pending_migration.name]
       end
-      
-      abort
     else
       puts "No pending migrations require shunt."
     end
